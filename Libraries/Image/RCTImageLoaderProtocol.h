@@ -62,9 +62,9 @@
 /**
  * As above, but includes download `priority`.
  */
-- (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                           priority:(RCTImageLoaderPriority)priority
-                                                           callback:(RCTImageLoaderCompletionBlock)callback;
+// - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
+//                                                            priority:(RCTImageLoaderPriority)priority
+//                                                            callback:(RCTImageLoaderCompletionBlock)callback;
 
 /**
 * As above, but includes target `size`, `scale` and `resizeMode`, which are used to

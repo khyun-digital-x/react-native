@@ -319,19 +319,19 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                 callback:callback];
 }
 
-- (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                           priority:(RCTImageLoaderPriority)priority
-                                                           callback:(RCTImageLoaderCompletionBlock)callback {
-    return [self loadImageWithURLRequest:imageURLRequest
-                                    size:CGSizeZero
-                                   scale:1
-                                 clipped:YES
-                              resizeMode:RCTResizeModeStretch
-                                priority:priority
-                           progressBlock:nil
-                        partialLoadBlock:nil
-                         completionBlock:callback];
-}
+// - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
+//                                                            priority:(RCTImageLoaderPriority)priority
+//                                                            callback:(RCTImageLoaderCompletionBlock)callback {
+//     return [self loadImageWithURLRequest:imageURLRequest
+//                                     size:CGSizeZero
+//                                    scale:1
+//                                  clipped:YES
+//                               resizeMode:RCTResizeModeStretch
+//                                 priority:priority
+//                            progressBlock:nil
+//                         partialLoadBlock:nil
+//                          completionBlock:callback];
+// }
 
 - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
                                                                size:(CGSize)size
