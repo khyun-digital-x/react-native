@@ -315,23 +315,23 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                                            callback:(RCTImageLoaderCompletionBlock)callback
 {
     return [self loadImageWithURLRequest:imageURLRequest
-                                priority:RCTImageLoaderPriorityImmediate
-                                callback:callback];
-}
+//                                 priority:RCTImageLoaderPriorityImmediate
+//                                 callback:callback];
+// }
 
 // - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
 //                                                            priority:(RCTImageLoaderPriority)priority
 //                                                            callback:(RCTImageLoaderCompletionBlock)callback {
 //     return [self loadImageWithURLRequest:imageURLRequest
-//                                     size:CGSizeZero
-//                                    scale:1
-//                                  clipped:YES
-//                               resizeMode:RCTResizeModeStretch
-//                                 priority:priority
-//                            progressBlock:nil
-//                         partialLoadBlock:nil
-//                          completionBlock:callback];
-// }
+                                    size:CGSizeZero
+                                   scale:1
+                                 clipped:YES
+                              resizeMode:RCTResizeModeStretch
+                                // priority:priority
+                           progressBlock:nil
+                        partialLoadBlock:nil
+                         completionBlock:callback];
+}
 
 - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
                                                                size:(CGSize)size
@@ -357,7 +357,7 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                                               scale:(CGFloat)scale
                                                             clipped:(BOOL)clipped
                                                          resizeMode:(RCTResizeMode)resizeMode
-                                                           priority:(RCTImageLoaderPriority)priority
+                                                          //  priority:(RCTImageLoaderPriority)priority
                                                       progressBlock:(RCTImageLoaderProgressBlock)progressBlock
                                                    partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
                                                     completionBlock:(RCTImageLoaderCompletionBlock)completionBlock
