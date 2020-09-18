@@ -309,10 +309,6 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
   return image;
 }
 
-<<<<<<< HEAD
-- (RCTImageLoaderCancellationBlock) loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                   callback:(RCTImageLoaderCompletionBlock)callback
-=======
 #pragma mark - RCTImageLoaderProtocol 2/3
 
 - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
@@ -345,7 +341,6 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                                       progressBlock:(RCTImageLoaderProgressBlock)progressBlock
                                                    partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
                                                     completionBlock:(RCTImageLoaderCompletionBlock)completionBlock
->>>>>>> ffc90c7f92... Remove requestToken being nil check from [RCTNetworkTask validateRequestToken]
 {
   return [self loadImageWithURLRequest:imageURLRequest
                                   size:CGSizeZero
@@ -357,16 +352,6 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                        completionBlock:callback];
 }
 
-<<<<<<< HEAD
-- (RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                      size:(CGSize)size
-                                                     scale:(CGFloat)scale
-                                                   clipped:(BOOL)clipped
-                                                resizeMode:(RCTResizeMode)resizeMode
-                                             progressBlock:(RCTImageLoaderProgressBlock)progressBlock
-                                          partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
-                                           completionBlock:(RCTImageLoaderCompletionBlock)completionBlock
-=======
 - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
                                                                size:(CGSize)size
                                                               scale:(CGFloat)scale
@@ -376,7 +361,6 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                                       progressBlock:(RCTImageLoaderProgressBlock)progressBlock
                                                    partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
                                                     completionBlock:(RCTImageLoaderCompletionBlock)completionBlock
->>>>>>> ffc90c7f92... Remove requestToken being nil check from [RCTNetworkTask validateRequestToken]
 {
   RCTImageURLLoaderRequest *request = [self loadImageWithURLRequest:imageURLRequest
                                                                size:size
